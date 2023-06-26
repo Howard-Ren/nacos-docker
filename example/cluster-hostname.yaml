@@ -56,15 +56,15 @@ services:
       mysql_nacos:
         condition: service_healthy
   mysql_nacos:
-    container_name: mysql5.7_nacos
+    container_name: mysql8_nacos
     build:
       context: .
-      dockerfile: ./image/mysql/5.7/Dockerfile
-    image: example/mysql:5.7
+      dockerfile: ./image/mysql/8/Dockerfile
+    image: example/mysql:8.0.30
     env_file:
       - ../env/mysql.env
     volumes:
-      - mysql57-nacos:/var/lib/mysql
+      - mysql8-nacos:/var/lib/mysql
     ports:
       - "3307:3306"
     healthcheck:
@@ -74,5 +74,5 @@ services:
       retries: 10
 
 volumes:
-  mysql57-nacos:
+  mysql8-nacos:
     driver: local
