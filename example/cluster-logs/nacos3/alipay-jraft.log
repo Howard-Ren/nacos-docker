@@ -1,0 +1,98 @@
+2023-06-26 08:50:26,585 INFO onStopFollowing: LeaderChangeContext [leaderId=nacos2:7848, term=3, status=Status[ERAFTTIMEDOUT<10001>: Lost connection from leader nacos2:7848.]].
+
+2023-06-26 08:50:26,590 INFO Node <naming_instance_metadata/nacos3:7848> received PreVoteResponse from nacos2:7848, term=3, granted=false.
+
+2023-06-26 08:50:26,588 INFO Node <naming_persistent_service/nacos3:7848> received PreVoteRequest from nacos2:7848, term=4, currTerm=3, granted=true, requestLastLogId=LogId [index=3, term=3], lastLogId=LogId [index=3, term=3].
+
+2023-06-26 08:50:26,590 INFO Node <naming_service_metadata/nacos3:7848> received PreVoteResponse from nacos2:7848, term=3, granted=true.
+
+2023-06-26 08:50:26,585 INFO Node <naming_persistent_service_v2/nacos3:7848> ignore PreVoteRequest from nacos1:7848, term=4, currTerm=3, because the leader nacos2:7848's lease is still valid.
+
+2023-06-26 08:50:26,615 INFO Node <naming_persistent_service/nacos3:7848> received PreVoteResponse from nacos2:7848, term=3, granted=false.
+
+2023-06-26 08:50:26,602 INFO Node <naming_service_metadata/nacos3:7848> start vote and grant vote self, term=3.
+
+2023-06-26 08:50:26,617 INFO Node <naming_instance_metadata/nacos3:7848> received PreVoteResponse from nacos1:7848, term=3, granted=true.
+
+2023-06-26 08:50:26,617 INFO Node <naming_instance_metadata/nacos3:7848> start vote and grant vote self, term=3.
+
+2023-06-26 08:50:26,617 INFO Node <naming_persistent_service/nacos3:7848> received PreVoteResponse from nacos1:7848, term=3, granted=true.
+
+2023-06-26 08:50:26,618 WARN Node <naming_service_metadata/nacos3:7848> received invalid PreVoteResponse from nacos2:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2023-06-26 08:50:26,617 INFO Node <naming_persistent_service_v2/nacos3:7848> received PreVoteResponse from nacos1:7848, term=3, granted=false.
+
+2023-06-26 08:50:26,630 INFO Node <naming_persistent_service/nacos3:7848> start vote and grant vote self, term=3.
+
+2023-06-26 08:50:26,630 INFO onStopFollowing: LeaderChangeContext [leaderId=nacos1:7848, term=3, status=Status[ERAFTTIMEDOUT<10001>: A follower's leader_id is reset to NULL as it begins to request_vote.]].
+
+2023-06-26 08:50:26,638 INFO Node <naming_persistent_service_v2/nacos3:7848> received PreVoteResponse from nacos2:7848, term=3, granted=true.
+
+2023-06-26 08:50:26,638 INFO Node <naming_persistent_service_v2/nacos3:7848> start vote and grant vote self, term=3.
+
+2023-06-26 08:50:26,644 INFO Node <naming_persistent_service/nacos3:7848> received RequestVoteRequest from nacos2:7848, term=4, currTerm=4.
+
+2023-06-26 08:50:26,649 INFO onStopFollowing: LeaderChangeContext [leaderId=nacos2:7848, term=3, status=Status[ERAFTTIMEDOUT<10001>: A follower's leader_id is reset to NULL as it begins to request_vote.]].
+
+2023-06-26 08:50:26,799 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=4, votedFor=nacos3:7848, cost time=178 ms
+
+2023-06-26 08:50:26,799 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=4, votedFor=nacos3:7848, cost time=177 ms
+
+2023-06-26 08:50:26,799 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=4, votedFor=nacos3:7848, cost time=134 ms
+
+2023-06-26 08:50:26,799 INFO Node <naming_service_metadata/nacos3:7848> received RequestVoteRequest from nacos1:7848, term=4, currTerm=4.
+
+2023-06-26 08:50:26,799 WARN Node <naming_instance_metadata/nacos3:7848> ignore stale AppendEntriesRequest from nacos1:7848, term=3, currTerm=4.
+
+2023-06-26 08:50:26,800 INFO Node <naming_instance_metadata/nacos3:7848> received RequestVoteRequest from nacos2:7848, term=4, currTerm=4.
+
+2023-06-26 08:50:26,800 INFO Node <naming_instance_metadata/nacos3:7848> received PreVoteRequest from nacos2:7848, term=4, currTerm=4, granted=true, requestLastLogId=LogId [index=3, term=3], lastLogId=LogId [index=3, term=3].
+
+2023-06-26 08:50:26,801 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=4, votedFor=nacos3:7848, cost time=150 ms
+
+2023-06-26 08:50:26,801 INFO Node <naming_persistent_service_v2/nacos3:7848> received RequestVoteRequest from nacos1:7848, term=4, currTerm=4.
+
+2023-06-26 08:50:26,822 WARN Node <naming_service_metadata/nacos3:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2023-06-26 08:50:26,826 WARN Node <naming_service_metadata/nacos3:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2023-06-26 08:50:26,837 INFO Node <naming_service_metadata/nacos3:7848> become leader of group, term=4, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2023-06-26 08:50:26,838 INFO Replicator=Replicator [state=Created, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos2:7848, waitId=-1, type=Follower]@nacos2:7848 is started
+
+2023-06-26 08:50:26,840 INFO Replicator=Replicator [state=Created, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, waitId=-1, type=Follower]@nacos1:7848 is started
+
+2023-06-26 08:50:26,870 INFO Node <naming_persistent_service/nacos3:7848> become leader of group, term=4, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2023-06-26 08:50:26,870 INFO Replicator=Replicator [state=Created, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos2:7848, waitId=-1, type=Follower]@nacos2:7848 is started
+
+2023-06-26 08:50:26,876 INFO Replicator=Replicator [state=Created, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, waitId=-1, type=Follower]@nacos1:7848 is started
+
+2023-06-26 08:50:26,895 INFO onLeaderStart: term=4.
+
+2023-06-26 08:50:26,904 INFO onLeaderStart: term=4.
+
+2023-06-26 08:51:54,780 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_4.
+
+2023-06-26 08:51:54,780 INFO Renaming /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_4.
+
+2023-06-26 08:51:54,782 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2023-06-26 08:51:54,796 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 1 to 2, cost 0 ms.
+
+2023-06-26 08:52:30,077 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_4.
+
+2023-06-26 08:52:30,077 INFO Renaming /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/temp to /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_4.
+
+2023-06-26 08:52:30,080 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2023-06-26 08:52:30,088 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 1 to 2, cost 0 ms.
+
+2023-06-26 08:54:01,763 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service/snapshot/snapshot_4.
+
+2023-06-26 08:54:01,763 INFO Renaming /home/nacos/data/protocol/raft/naming_persistent_service/snapshot/temp to /home/nacos/data/protocol/raft/naming_persistent_service/snapshot/snapshot_4.
+
+2023-06-26 08:54:01,766 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service/snapshot/snapshot_1.
+
+2023-06-26 08:54:01,774 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service/log from log index 1 to 2, cost 0 ms.
+

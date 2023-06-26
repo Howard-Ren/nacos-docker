@@ -1,0 +1,24 @@
+2023-06-25 18:00:06,350 INFO Raft group naming_persistent_service has leader null
+
+2023-06-25 18:02:34,352 INFO Raft group naming_persistent_service has leader null
+
+2023-06-25 18:02:39,820 INFO Raft group naming_persistent_service has leader nacos1:7848
+
+2023-06-25 18:03:04,005 INFO Raft group naming_persistent_service has leader null
+
+2023-06-25 18:03:11,178 INFO Raft group naming_persistent_service has leader nacos2:7848
+
+2023-06-25 18:04:10,369 INFO Raft group naming_persistent_service has leader null
+
+2023-06-25 18:04:15,889 INFO Raft group naming_persistent_service has leader nacos1:7848
+
+2023-06-25 18:35:58,613 INFO Raft group naming_persistent_service has leader null
+
+2023-06-25 18:36:03,607 INFO Raft group naming_persistent_service has leader nacos1:7848
+
+2023-06-25 19:41:20,115 INFO Raft group naming_persistent_service has leader nacos1:7848
+
+2023-06-25 19:41:20,607 INFO Raft group naming_persistent_service has leader nacos3:7848
+
+2023-06-25 22:41:39,954 INFO Raft group naming_persistent_service has leader nacos1:7848
+
