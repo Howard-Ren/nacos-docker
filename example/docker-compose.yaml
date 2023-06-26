@@ -26,8 +26,8 @@ services:
       - ./cluster-logs/nacos2:/home/nacos/logs
     ports:
       # - "7858:7848"
-      - "8858:8848"
-      - "9858:9848"
+      - "8849:8848"
+      - "9849:9848"
       # - "9859:9849"
     env_file:
       - ../env/nacos-hostname.env
@@ -43,8 +43,8 @@ services:
       - ./cluster-logs/nacos3:/home/nacos/logs
     ports:
       # - "7868:7848"
-      - "8868:8848"
-      - "9868:9848"
+      - "8850:8848"
+      - "9850:9848"
       # - "9869:9849"
     env_file:
       - ../env/nacos-hostname.env
