@@ -61,7 +61,7 @@ services:
     env_file:
       - ../env/mysql.env
     volumes:
-      - ./mysql:/var/lib/mysql
+      - mysql57-nacos:/var/lib/mysql
     ports:
       - "3307:3306"
     healthcheck:
@@ -70,3 +70,6 @@ services:
       timeout: 10s
       retries: 10
 
+volumes:
+  mysql57-nacos:
+    driver: local
